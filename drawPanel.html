@@ -1,0 +1,79 @@
+<!-- code for this gotten from: https://www.html5canvastutorials.com/labs/html5-canvas-paint-application/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draw your notes out!</title>
+    <style type="text/css">
+    body {
+        margin: 0; padding: 0;
+    }
+
+    #content {
+        width: 800px;
+        height: 500px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: 4px dotted black;
+    }
+
+    #title {
+        width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top:30px;
+    }
+
+    #home {
+      position: absolute; left: 20px; top: 230px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="title"><h2>Please draw something!</h2></div>
+
+    <form id="home" action="home.html">
+            <input type="submit" value="home button" />
+          </form>
+
+    <div id="content">
+        <canvas id="myCanvas"></canvas>
+    </div>
+
+    <script type="text/javascript">
+    var canvas=document.getElementById("myCanvas");
+    var connectionGrid=canvas.getContext("2d");
+    var drawing = document.getElementById("content");
+    var drawStyle = getComputedStyle(drawing);
+    canvas.width = parseInt(drawStyle.getPropertyValue("width"));
+    canvas.height = parseInt(drawStyle.getPropertyValue("height"));
+
+    var mouseGrid = {x: 0, y: 0};
+
+    canvas.addEventListener('mousemove', function(e) {
+        mouseGrid.x = e.pageX - this.offsetLeft;
+        mouseGrid.y = e.pageY - this.offsetTop;
+    }, false);
+
+    connectionGrid.linewidth = 3;
+    connectionGrid.lineJoin = 'round';
+    connectionGrid.lineCap = 'round';
+    connectionGrid.strokeStyle = '#00FFF2';
+
+    canvas.addEventListener('mousedown', function(e) {
+        connectionGrid.beginPath();
+        connectionGrid.moveTo(mouseGrid.x, mouseGrid.y);
+        canvas.addEventListener('mousemove', onPaint, false);
+    }, false);
+
+    canvas.addEventListener('mouseup', function() {
+        canvas.removeEventListener('mousemove', onPaint, false);
+    }, false);
+
+    var onPaint = function() {
+        connectionGrid.lineTo(mouseGrid.x, mouseGrid.y);
+        connectionGrid.stroke();
+    };
+    </script>
+</body>
+</html>

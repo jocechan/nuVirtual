@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NU Virtual</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+
+    #home {
+        position: absolute; left: 20px; top: 200px;
+    }
+
+    #chat {
+      position: absolute; left: 20px; top: 230px;
+    }
+
+    #draw {
+      position: absolute; left: 20px; top: 260px;
+    }
+
+    #cb {
+      position: absolute; left: 20px; top: 290px;
+    }
+
+    #goog {
+      position: absolute; left: 20px; top: 320px;
+    }
+
+    .tooltip {
+        position: absolute;
+        left: 20px;
+        top: 375px;
+        display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+  
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    p {
+        position: relative; right: 20px; top: 320px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+  </style>
+</head>
+<h2>Welcome to NUVirtual!</h2>
+<body>
+
+        <p>Welcome home, Huskies. Please click on the buttons to your left!</p>
+  <img src="nuVirtualLogo.jpg" alt="image" style="position: absolute; top: 0; left: 0;" height="150" width="150"/>
+  <div id="message-container"></div>
+
+  <form id="goog" action="http://google.com">
+    <input type="submit" value="search on google" />
+  </form>
+
+  <form id="chat" action="index.html">
+    <input type="submit" value="chat button" />
+  </form>
+
+  <form id="home" action="home.html">
+        <input type="submit" value="home button" />
+      </form>
+
+  <form id="draw" action="drawPanel.html">
+      <input type="submit" value="draw something" />
+    </form>
+
+  <form id="cb">
+    <input type="checkbox" id="checkbox1" name="cb1">
+    <label for="checkbox1">check this out!</label>
+  </form>
+
+  <div class="tooltip">hover over me
+      <span class="tooltiptext">Have a good day!</span>
+  </div>
+
+  <script async src="https://cse.google.com/cse.js?cx=004850961312749195017:81cvl6cnc8y"></script>
+<div class="gcse-search"></div>
+
+</body>
+</html>
