@@ -8,150 +8,27 @@
   <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
   <script defer src="script.js"></script>
   <link type="text/css" rel="stylesheet" href="style.css" />
-  <style>
-    /*body {
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    #message-container {
-      width: 100%;
-      height: 100%;
-      max-width: 1200px;
-      max-height: 700px;
-      border-style: solid;*/
-      /* overflow:auto; */
-      /*overflow-y: scroll;
-
-    }
-
-    #message-container div {
-      background-color: #FFF;
-      padding: 5px;
-    }
-
-    #message-container div:nth-child(2n) {
-      background-color: #FFF;
-    }
-
-    #send-container {
-      position: fixed;
-      padding-bottom: 50px;
-      bottom: 0;
-      background-color: white;
-      max-width: 1200px;
-      height: 30px;
-      width: 80%;
-      display: flex;
-    }
-
-    #message-input {
-      flex-grow: 1;
-    }
-
-    #send-button {
-      transition-duration: 0.4s;
-      font-size: 20px;
-    }
-
-    #send-button:hover {
-      background-color: rgb(204, 46, 46);
-      color: white;
-    }
-
-    #submit-button {
-      position: absolute; bottom: 0; right: 0; top: 5;
-    }
-
-    #home {
-        position: absolute; left: 20px; top: 200px;
-        width: 200px;
-        background-color: #d7e3e6;
-        color: black;
-        text-decoration: none;
-        text-align: center;
-        border: none;
-        padding: 5px;
-    }
-
-    /* .home {
-    background-color: #d7e3e6;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    padding: 5px;
-} */
-
-    /*#home:hover {
-      background-color: #135f7c;
-      color: white;
-}
-
-    #chat {
-      position: absolute; left: 20px; top: 230px;
-    }
-
-
-    #draw {
-      position: absolute; left: 20px; top: 260px;
-    }
-
-    #cb {
-      position: absolute; left: 20px; top: 290px;
-    }
-
-    #goog {
-      position: absolute; left: 20px; top: 320px;
-    }*/
-
-  </style>
 </head>
 <body>
-  <!--<img src="nuVirtualLogo.jpg" alt="image" style="position: absolute; top: 0; left: 0;" height="150" width="150"/>-->
-  <a href="home.html" title="NUVirtual Homepage">
-      <img src="nuVirtualLogo.jpg" id="logo"/>
-  </a>
 
-  <div class="main_menu">
-      <!-- <a href="home.html">Home</a> -->
-      <a href="#" class="active">Go to Chat</a>
-      <!--<a href="class_info.html">View My Info</a>-->
-  </div>
+<a href="home.html" title="NUVirtual Homepage">
+  <img src="nuVirtualLogo.jpg" id="logo"/>
+</a>
+
+<div class="main_menu">
+  <a href="home.html">Home</a>
+  <a href="#" class="active">Go to Chat</a>
+  <a href="my_classes.html">My Classes</a>
+  <a href="saved_chats.html">My Saved Chats</a>
+</div>
+
+  <!--<img src="nuVirtualLogo.jpg" alt="image" style="position: absolute; top: 0; left: 0;" height="150" width="150"/>-->
 
   <div id="message-container"></div>
   <form id="send-container">
     <input type="text" id="message-input">
     <button type="submit" id="send-button">Send</button>
   </form>
-
-  <!-- <form id="goog" action="http://google.com">
-    <input type="submit" value="search on google" />
-  </form> -->
-
-  <!--<form id="chat" action="index.html">
-      <input type="submit" value="chat button" />
-    </form>
-
-  <form id="home" action="home.html">
-    <input type="submit" value="home button" />
-  </form>
-
-  <form id="draw" action="drawPanel.html">
-      <input type="submit" value="draw something" />
-    </form>
-
-  <form id="cb">
-    <input type="checkbox" id="checkbox1" name="cb1">
-    <label for="checkbox1">check this out!</label>
-  </form>
-
-  <form id="submit-button" action="submitPage.html">
-    <input type="image" src="submit.jpg" alt="Submit" width="60" height="60">
-  </form>-->
-
 
 </body>
 </html>
@@ -162,21 +39,4 @@
     <title>NUVirtual</title>
     <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <a href="index.html" title="NUVirtual Homepage">
-        <img src="nuVirtualLogo.jpg" id="logo"/>
-    </a>
-    <div class="main_menu">
-        <!--<p>Welcome. Please select an option.</p>-->
-        <a href="home.html" class="active">Home</a>
-        <a href="index.html">Go to Chat</a>
-        <a href="class_info.html">View My Info</a>
-    </div>
-
-    <!-- <div>
-    <h2>Welcome to NUVirtual!</h2>
-    <input type="checkbox" id="checkb" name="checkb">
-    <label for="checkb">Check here if you're excited about HCI! &#128515;</label><br>
-    </div> -->
-</body>
 </html>
