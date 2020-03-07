@@ -48,6 +48,12 @@ a {
     border: none;
     width: 200px;
     overflow-y: auto;
+    margin-top: 15%;
+}
+
+.main_menu li {
+  display: block;
+  margin: 0;
 }
 
 .main_menu a {
@@ -67,7 +73,6 @@ a {
 .main_menu a.active {
     background-color: #135f7c;
     color: white;
-    margin-top: 30%;
 }
 
 #wrapper, #loginform {
@@ -214,4 +219,34 @@ a {
 
 #submit-button {
   position: absolute; bottom: 0; right: 0; top: 5;
+}
+
+#resolve-question {
+    margin-bottom: 10;
+    background-color: #30bb49;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 5px;
+}
+
+#resolve-question:hover {
+    background-color: #1c732c;
+}
+
+#home_dashboard {
+  margin-left: 20%;
+  background-color: #f3f6f7;
+  height: 500px;
+  overflow-y: auto;
+}
+
+#home_dashboard h3 {
+  background-color: #d7e2e6;
+  padding: 12px;
+}
+
+#home_dashboard p {
+  padding: 12px;
 }
