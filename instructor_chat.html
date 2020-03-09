@@ -18,7 +18,7 @@
 <div class="main_menu">
   <a href="home.html">Home</a>
   <!--<a href="#" class="active">Chat</a>-->
-  <a href="my_classes.html">My Classes</a>
+  <a href="my_classes.html">Ask a Question</a>
   <ul>
     <li><a href="#" class="active">Chat</a></li>
   </ul>
@@ -40,19 +40,28 @@
 <!-- <button type="submit" id="resolve-question">I got my answer!</button> -->
 
 <script>
-  document.getElementById("resolve-question").onclick = function() {resolve()};
 
   document.getElementById("share-chat").onclick = function() {share_chat()};
+  document.getElementById("send-button").onclick = function() {record_transcript()};
+
 
   function resolve() {
     //document.write("<div class='office_hours_status'><span onclick='this.parentElement.style.display='none'' class='x_button'><img src='https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_delete_1-512.png' class='x_button' align='right'/></span><p>Way to go! Chat saved.</p></div>");
     document.write("<a href='my_classes.html' class='general_button'>Back to My Classes</a>");
 
+  }
     function share_chat() {
       alert("Chat shared.");
     }
 
+  
+
+  var transcript = []
+  function record_transcript() {
+    msg = document.getElementById("message-input").innerHTML.value
+    transcript.push(msg)
   }
+
 </script>
 </body>
 </html>

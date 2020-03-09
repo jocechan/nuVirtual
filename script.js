@@ -5,7 +5,7 @@ const messageForm = document.getElementById('send-container')
 const messageInput = document.getElementById('message-input')
 
 const name = prompt('Hello! What is your name?')
-appendMsg('Welcome to Virtual Office Hours!')
+appendMsg('')
 socket.emit('new-user', name)
 
 socket.on('chat-message', data => {
