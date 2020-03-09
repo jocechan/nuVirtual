@@ -1,14 +1,16 @@
 # nuVirtual
-HCI project
+Our final project is a web app that allows students to communicate with instructors during virtual office hours using a real-time chat service.
 
-Running our code requires a little bit of server work.
+To run our code, you have to start a chat server as well as an http server.
 
 To run the chat server:
-Jocelyn please put instructions here lol
-
-To run the node.js server:
 1. Navigate to the folder with our code in it using your terminal.
-2. Type "http-server" into the command line (without quotes). If you do not have node installed, follow the instructions found here: https://www.npmjs.com/package/http-server
-3. Copy-paste one of the available servers into your browser and add "/home.html" to open our home page. You can then use our application like a normal website.
+2. Enter `npm init` into the command line and follow the instructions by hitting "Enter."
+3. Enter `npm i http://socket.io` into the command line. Ignore any error messages.
+4. Enter `npm i —save-dev nodemon` into the command line. Ignore any error messages.
+5. Enter `npm run devStart` into the command line. This should start the server.
 
-[ REMOVE BEFORE SUBMITTING ] https://www.w3schools.com/jsref/event_onclick.asp we will need this later
+To run the http server:
+1. Open a separate terminal window and navigate to the folder with our code in it.
+2. Enter `http-server` into the command line. If you do not have node.js installed, follow the instructions found here: https://www.npmjs.com/package/http-server
+3. Copy-paste one of the available server ports into your browser and add "/welcome.html" to open our home page. You can then use our application like a normal website.
