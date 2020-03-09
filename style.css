@@ -207,6 +207,15 @@ a {
   flex-grow: 1;
 }
 
+.button {
+  background-color: #135f7c;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 20px;
+}
+
 #send-button {
   transition-duration: 0.4s;
   font-size: 20px;
