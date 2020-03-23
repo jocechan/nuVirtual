@@ -5,10 +5,14 @@ To run our code, you have to start a chat server as well as an http server.
 
 To run the chat server:
 1. Navigate to the folder with our code in it using your terminal.
-2. Enter `npm init` into the command line and follow the instructions by hitting "Enter."
+2. Enter `npm init` into the command line. This will open a shell for npm. Follow the instructions by hitting "Enter." Eventually you will be prompted to enter `yes` into the command line.
 3. Enter `npm i http://socket.io` into the command line. Ignore any error messages.
 4. Enter `npm i —save-dev nodemon` into the command line. Ignore any error messages.
-5. Enter `npm run devStart` into the command line. This should start the server.
+5. Enter `npm run devStart` into the command line. This should start the server. If you encounter a "missing script" error, you can check the package.json file created in the folder and make sure that the following information is there under the `scripts` tag: 
+`"scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },`
 
 To run the http server:
 1. Open a separate terminal window and navigate to the folder with our code in it.
