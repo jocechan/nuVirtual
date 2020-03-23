@@ -1,7 +1,7 @@
 # nuVirtual
 Our final project is a web app that allows students to communicate with instructors during virtual office hours using a real-time chat service.
 
-To run our code, you have to start a chat server as well as an http server.
+To run our code, you have to start a chat server as well as an http server. NOTE: We can't guarantee that these instructions will work with non-Mac computers.
 
 To run the chat server:
 1. Navigate to the folder with our code in it using your terminal.
