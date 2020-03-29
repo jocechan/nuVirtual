@@ -1,0 +1,263 @@
+/* CSS Document */ 
+body {
+    font:18px Helvetica;
+    color: #222;
+    text-align:center;
+    padding:35px; }
+
+form, p, span {
+    margin:0;
+    padding:0; }
+
+input { font:12px arial; }
+
+
+  
+form, p, span {
+    margin:0;
+    padding:0; }
+  
+input { font:12px arial; }
+  
+a {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color:#0000FF;
+    text-decoration:none; }
+
+    a:hover { text-decoration:underline; }
+
+#logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+
+}
+
+.main_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 175px;
+    margin-top: 115px;
+    margin-left: 15px;
+    border: none;
+    width: 200px;
+    overflow-y: auto;
+    margin-top: 15%;
+}
+
+.main_menu li {
+  display: block;
+  margin: 0;
+}
+
+.main_menu a {
+    display: block;
+    padding: 12px;
+    background-color: #bdcfd6;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+}
+
+.main_menu a:hover {
+    background-color: #135f7c;
+    color: #ccc;
+}
+
+.main_menu a.active {
+    background-color: #135f7c;
+    color: white;
+}
+
+#wrapper, #loginform {
+    margin:0 auto;
+    padding: 1em;
+    /*padding-bottom:25px;*/
+    background:#bdcfd6;
+    /* nu color: #E5D4AB;*/
+    background-color: #bdcfd6;
+    width:504px;
+    border:1px solid #000; }
+
+#loginform { padding-top:18px; }
+
+    #loginform p { margin: 5px; }
+  
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:25px;
+    margin-top: 30%;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:430px;
+    border:1px solid #bdcfd6;
+    overflow:auto; }
+
+#usermsg {
+    width:395px;
+    border:1px solid #bdcfd6;
+    height: 20px; }
+
+#submit { width: 60px; }
+
+.error { color: #ff0000; }
+
+#chat_menu { padding:12.5px 25px 12.5px 25px; }
+
+.welcome {
+    /*float:left; */
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.logout { float:right; }
+
+.msgln { margin:0 0 2px 0; }
+
+.office_hours_status {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    width: 300;
+    padding: 12px;
+    background-color: #ec3641;
+    color: white;
+}
+
+.x_button {
+    height: 18px;
+    width: 18px;
+    padding: 2px;
+}
+
+.general_button {
+    background-color: #d7e2e6;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    padding: 5px;
+}
+
+.general_button:hover {
+    background-color: #135f7c;
+    color: white;
+}
+
+#chat {
+  position: absolute; left: 20px; top: 230px;
+}
+
+
+#draw {
+  position: absolute; left: 20px; top: 260px;
+}
+
+#cb {
+  position: absolute; left: 20px; top: 290px;
+}
+
+#goog {
+  position: absolute; left: 20px; top: 320px;
+}
+
+#message-container {
+  width: 900px;
+  height: 550px;
+  border-style: solid;
+  margin-left: 20%;
+  /* overflow:auto; */
+  overflow-y: scroll;
+  /* display:flex;
+  flex-direction: column; */
+}
+
+#message-container div {
+  background-color: #FFF;
+  padding: 5px;
+}
+
+#message-container div:nth-child(2n) {
+  background-color: #FFF;
+}
+
+#send-container {
+  position: fixed;
+  padding-bottom: 50px;
+  bottom: 0;
+  background-color: white;
+  max-width: 1200px;
+  height: 30px;
+  width: 50%;
+  margin-left: 20%;
+  display: flex;
+}
+
+#message-input {
+  flex-grow: 1;
+}
+
+.button {
+  background-color: #135f7c;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 20px;
+}
+
+#send-button {
+  transition-duration: 0.4s;
+  font-size: 20px;
+}
+
+#send-button:hover {
+  background-color: rgb(204, 46, 46);
+  color: white;
+}
+
+#submit-button {
+  position: absolute; bottom: 0; right: 0; top: 5;
+}
+
+#resolve-question {
+    margin-bottom: 10;
+    background-color: #30bb49;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    position: absolute;
+    right:    300px;
+    bottom:   50px;
+}
+
+#resolve-question:hover {
+    background-color: #1c732c;
+}
+
+#home_dashboard {
+  margin-left: 20%;
+  background-color: #f3f6f7;
+  height: 500px;
+  overflow-y: auto;
+}
+
+#home_dashboard h3 {
+  background-color: #d7e2e6;
+  padding: 12px;
+}
+
+#home_dashboard p {
+  padding: 12px;
+}

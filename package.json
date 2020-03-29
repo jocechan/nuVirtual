@@ -1,10 +1,11 @@
 {
   "name": "nuvirtual",
   "version": "1.0.0",
-  "description": "",
+  "description": "HCI project",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocechan/nuVirtual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jocechan/nuVirtual/issues"
+  },
+  "homepage": "https://github.com/jocechan/nuVirtual#readme"
 }

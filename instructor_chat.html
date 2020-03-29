@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NU Virtual: Chat</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<a href="home.html" title="NUVirtual Homepage">
+  <img src="nuVirtualLogo.jpg" id="logo"/>
+</a>
+
+<div class="main_menu">
+  <a href="home.html">Home</a>
+  <!--<a href="#" class="active">Chat</a>-->
+  <a href="my_classes.html">My Classes</a>
+  <ul>
+    <li><a href="#" class="active">Chat</a></li>
+  </ul>
+  <a href="saved_chats.html">My Chats</a>
+</div>
+
+  <!--<img src="nuVirtualLogo.jpg" alt="image" style="position: absolute; top: 0; left: 0;" height="150" width="150"/>-->
+<div id="message-options">
+  <a href="my_classes.html" class="general_button" target="_blank" style="margin-right: 50%"> < Back to My Classes</a>
+  <h2 style="margin-top: 10;">IS 4300: Answer a Question!</h2>
+  <button class="general_button" id="share-chat" style="margin-left: 50%; margin-bottom: 10;">Share Chat</button>
+</div>
+
+  <div id="message-container"></div>
+  <form id="send-container">
+    <input type="text" id="message-input">
+    <button type="submit" class="general_button">Send</button>
+  </form>
+<!-- <button type="submit" id="resolve-question">I got my answer!</button> -->
+
+<script>
+
+  document.getElementById("share-chat").onclick = function() {share_chat()};
+  document.getElementById("send-button").onclick = function() {record_transcript()};
+
+
+  function resolve() {
+    //document.write("<div class='office_hours_status'><span onclick='this.parentElement.style.display='none'' class='x_button'><img src='https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_delete_1-512.png' class='x_button' align='right'/></span><p>Way to go! Chat saved.</p></div>");
+    document.write("<a href='my_classes.html' class='general_button'>Back to My Classes</a>");
+
+  }
+    function share_chat() {
+      alert("Chat shared.");
+    }
+
+  
+
+  var transcript = []
+  function record_transcript() {
+    msg = document.getElementById("message-input").innerHTML.value
+    transcript.push(msg)
+  }
+
+</script>
+</body>
+</html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="UTF-8">
+<head>
+    <title>NUVirtual</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+</html>
