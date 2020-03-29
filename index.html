@@ -44,11 +44,23 @@
 
 <script>
   document.getElementById("resolve-question").onclick = function() {resolve()};
+  document.getElementById("send-button").onclick = function() {record_transcript()};
+
+  var student_transcript = []
+  function record_transcript() {
+    msg = document.getElementById("message-input").value; //.innerHTML.value
+    student_transcript.push(msg);
+    console.log(msg)
+  }
+
 
   function resolve() {
     //document.write("<div class='office_hours_status'><span onclick='this.parentElement.style.display='none'' class='x_button'><img src='https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_delete_1-512.png' class='x_button' align='right'/></span><p>Way to go! Chat saved.</p></div>");
     //document.write("<a href='my_classes.html' class='general_button'>Back to My Classes</a>");
-    document.getElementById("resolved-text").innerHTML = "Way to go! Chat saved."
+
+    localStorage.setItem("student_transcript", student_transcript);
+    //document.getElementById("transcripts").innerHTML = localStorage.getItem("student_transcript");
+    document.getElementById("resolved-text").innerHTML = "Way to go! Chat saved.";
   }
 
 </script>
