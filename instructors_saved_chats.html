@@ -7,14 +7,18 @@
   <link type="text/css" rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<a href="home.html" title="NUVirtual Homepage">
+	<a href="instructors_homepage.html" title="NUVirtual Homepage">
             <img src="nuVirtualLogo.jpg" id="logo"/>
     </a>
     <div class="main_menu">
       <a href="instructors_homepage.html">Home</a>
-      <!--<a href="index.html">Go to Chat</a>-->
       <a href="instructors_classes.html">My Classes</a>
       <a href="#" class="active">My Chats</a>
-      <!--<a href="class_info.html">View My Info</a>-->
     </div>
+    <div id="transcripts2b"></div>
+
     <p>You have no saved chats. Chats from previous office hours sessions will appear here.</p>
+
+    <script type="text/javascript">
+      document.getElementById("transcripts2b").innerHTML = localStorage.getItem("chat_transcript2");
+    </script>

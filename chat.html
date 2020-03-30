@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NU Virtual: Chat</title>
+  <!--<script defer src="35.208.221.63:3000/socket.io/socket.io.js"></script>-->
   <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
   <script defer src="script.js"></script>
   <link type="text/css" rel="stylesheet" href="style.css" />
@@ -50,7 +51,7 @@
   function record_transcript() {
     msg = document.getElementById("message-input").value; //.innerHTML.value
     student_transcript.push(msg);
-    console.log(msg)
+    //console.log(msg)
   }
 
 
@@ -58,7 +59,7 @@
     //document.write("<div class='office_hours_status'><span onclick='this.parentElement.style.display='none'' class='x_button'><img src='https://cdn0.iconfinder.com/data/icons/cosmo-player/40/button_delete_1-512.png' class='x_button' align='right'/></span><p>Way to go! Chat saved.</p></div>");
     //document.write("<a href='my_classes.html' class='general_button'>Back to My Classes</a>");
 
-    localStorage.setItem("student_transcript", student_transcript);
+    //localStorage.setItem("student_transcript", student_transcript);
     //document.getElementById("transcripts").innerHTML = localStorage.getItem("student_transcript");
     document.getElementById("resolved-text").innerHTML = "Way to go! Chat saved.";
   }
