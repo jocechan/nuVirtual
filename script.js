@@ -27,8 +27,6 @@ socket.on('user-connected', name => {
 // handling disconnects
 socket.on('user-disconnected', name => {
     appendMsg(`${name} has just left the chat`)
-    console.log(chat_transcript2)
-    //localStorage.setItem("chat_transcript2", chat_transcript2)
     setTranscript(chat_transcript2)
 })
 
@@ -43,18 +41,20 @@ messageForm.addEventListener('submit', e => {
     messageInput.value = ''
 })
 
+// render the message in the chatbox
 function appendMsg(message) {
     const messageElement = document.createElement('div')
     messageElement.innerText = message
     messageContainer.append(messageElement)
 }
 
+// save the chat transcript to be visible on "My Chats" pages
 function setTranscript(transcript) {
     var new_transcript = ""
     var i;
 
     for (i = 0; i < transcript.length; i++) {
-        text += transcript[i] + "<br>";
+        new_transcript += transcript[i] + "<br>";
     }
 
     localStorage.setItem("chat_transcript2", new_transcript)

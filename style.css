@@ -122,22 +122,6 @@ a {
 
 .msgln { margin:0 0 2px 0; }
 
-.office_hours_status {
-    position: fixed;
-    top: 20%;
-    left: 40%;
-    width: 300;
-    padding: 12px;
-    background-color: #ec3641;
-    color: white;
-}
-
-.x_button {
-    height: 18px;
-    width: 18px;
-    padding: 2px;
-}
-
 .general_button {
     background-color: #d7e2e6;
     color: black;
@@ -165,9 +149,9 @@ a {
   position: absolute; left: 20px; top: 290px;
 }
 
-#goog {
+/*#goog {
   position: absolute; left: 20px; top: 320px;
-}
+}*/
 
 #message-container {
   width: 900px;
@@ -220,7 +204,7 @@ a {
 }
 
 #send-button:hover {
-  background-color: rgb(204, 46, 46);
+  background-color: #cc2e2e;
   color: white;
 }
 
@@ -260,4 +244,20 @@ a {
 
 #home_dashboard p {
   padding: 12px;
+}
+
+.logout {
+  background-color: #cc2e2e;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  right: 1%;
+  top: 1%;
+}
+
+.logout:hover {
+  text-decoration: underline;
 }
