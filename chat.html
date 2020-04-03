@@ -27,6 +27,24 @@
   <a href="saved_chats.html">My Chats</a>
 </div>
 
+<div id="box">
+  <ion-icon name="checkmark-circle"></ion-icon>
+  <h1>Awesome! Thanks for using NUVirtual.</h1>
+  <a onclick="pop()" href="home.html">Return to homepage</a>
+</div>
+
+<script type="text/javascript">
+var c = 0;
+function pop() {
+  if(c == 0){
+    document.getElementById("box").style.display = "block";
+    c = 1;
+  } else {
+    document.getElementById("box").style.display = "none";
+    c = 0;
+  }
+}
+</script>
   <!--<img src="nuVirtualLogo.jpg" alt="image" style="position: absolute; top: 0; left: 0;" height="150" width="150"/>-->
 <div id="message-options">
   <a href="my_classes.html" class="general_button" target="_blank" style="margin-right: 50%"> < Back to My Classes</a>
@@ -42,7 +60,8 @@
 
 <p id="resolved-text"></p>
 
-<button type="submit" id="resolve-question">I got my answer!</button>
+<!-- <button type="submit" id="resolve-question">I got my answer!</button> -->
+<a onclick="pop()" class="btn">I got my answer!</a>
 
 <script>
   document.getElementById("resolve-question").onclick = function() {resolve()};
@@ -66,6 +85,9 @@
   }
 
 </script>
+
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
 </body>
 </html>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

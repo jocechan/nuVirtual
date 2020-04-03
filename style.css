@@ -212,7 +212,7 @@ a {
   position: absolute; bottom: 0; right: 0; top: 5;
 }
 
-#resolve-question {
+/* #resolve-question {
     margin-bottom: 10;
     background-color: #30bb49;
     color: white;
@@ -224,10 +224,28 @@ a {
     position: absolute;
     right:    300px;
     bottom:   50px;
+} */
+
+/* #resolve-question:hover {
+    background-color: #1c732c;
+} */
+
+.btn {
+  margin-bottom: 10;
+  background-color: #30bb49;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  position: absolute;
+  right:    300px;
+  bottom:   50px;
 }
 
-#resolve-question:hover {
-    background-color: #1c732c;
+.btn:hover {
+  background: #1c732c
 }
 
 #home_dashboard {
@@ -260,4 +278,29 @@ a {
 
 .logout:hover {
   text-decoration: underline;
+}
+
+#box {
+  width: 500px;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+#box ion-icon{
+  color: #2ecc71;
+  font-size: 100px;
+}
+
+#box h1{
+  color: #333;
 }
