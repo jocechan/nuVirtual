@@ -52,8 +52,21 @@
 <div class="gcse-search"></div> -->
 <div id="home_dashboard">
 <h3>Recent Posts from Instructors:</h3>
-<p>Looks like there's nothing here right now. Your professors and TA's can post chat transcripts and announcements here for everyone to see.</p>
+<!--<p>Looks like there's nothing here right now. Your professors and TA's can post chat transcripts and announcements here for everyone to see.</p>-->
+<div id="dashboard_post"></div>
 </div>
+
+<script type="text/javascript">
+
+  has_post = localStorage.getItem("shared_chat");
+
+  if (has_post == 1) {
+    document.getElementById("dashboard_post").innerHTML = localStorage.getItem("chat_transcript2");
+  } else {
+    document.getElementById("dashboard_post").innerHTML = "Looks like there's nothing here right now. Your professors and TA's can post chat transcripts and announcements here for everyone to see.";
+  }
+
+  </script>
 
 </body>
 </html>
