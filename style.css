@@ -244,6 +244,18 @@ a {
   bottom:   50px;
 }
 
+.new_post_button {
+  background-color: #30bb49;
+  color: white;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  padding: 5px;
+  right: 25.5%;
+  top: 1%;
+}
+
 .btn:hover {
   background: #1c732c
 }
@@ -295,6 +307,30 @@ a {
   text-align: center;
   display: none;
 }
+
+#np_box {
+  width: 60%;
+  overflow: hidden;
+  background: #f1f1f1;
+  box-shadow: 0 0 20px black;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  padding: 10px;
+  text-align: center;
+  display: none;
+}
+
+input[type="text"]{
+  width:97%;
+  height: 20px;
+  border-radius: 5px;
+  border:#666 1px solid;
+}
+
 
 #box ion-icon{
   color: #2ecc71;
