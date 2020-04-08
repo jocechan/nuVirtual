@@ -22,6 +22,77 @@
 <div id="home_dashboard">
 <h3>Recent Posts from Instructors:</h3>
 <!--<p>Looks like there's nothing here right now. Your professors and TA's can post chat transcripts and announcements here for everyone to see.</p>-->
+
+<script>
+    function first() {
+      var button = document.getElementById('button');
+      button.addEventListener("click", save, false);
+      display();
+    }
+
+    function save() {
+      var name = document.getElementById('name').value;
+      var message = document.getElementById('message').value;
+      var time = document.getElementById("time").value = Date();
+      sessionStorage.setItem(name,message,time);
+      display();
+      name.value="";
+      message.value="";
+    }
+
+    function display() {
+      var display_data = document.getElementById('display_data');
+      display_data.innerHTML="";
+
+      for(var i=0; i < sessionStorage.length; i++){
+        var a = sessionStorage.key(i);
+        var b = sessionStorage.getItem(a);
+        var time = document.getElementById("time").innerHTML.value = Date();
+        display_data.innerHTML += time + ":" + a +" : "+b+"<br>";
+      }
+    }
+
+    function clear() {
+      sessionStorage.clear();
+      location.reload();
+    }
+
+    window.addEventListener("load", first, false)
+  </script>
+  
+  <a onclick="pop()" class="new_post_button">New post</a>
+  <!-- <ion-icon name="document-text-outline"></ion-icon> -->
+
+  <section id="np_box">
+    <form>
+      <p>Name:<br><input type="text" id="name" /></p>
+      <p>Message:<br><input type="text" id="message" /></p>
+      <p><input type="submit" id="button" value="Post" /></p>
+      <a href="javascript:clear()">Delete all posts</a>
+    </form>
+  </section>
+
+  <section id="display_data">
+
+  </section>
+
+  <script id="time">
+  </script>
+
+  <script type="text/javascript">
+    var c = 0;
+    function pop() {
+      if(c == 0){
+        document.getElementById("np_box").style.display = "block";
+        c = 1;
+      } else {
+        document.getElementById("np_box").style.display = "none";
+        c = 0;
+      }
+    }
+    </script>
+
+  
 <div id="dashboard_post2"></div>
 </div>
 
